@@ -1,6 +1,6 @@
 ---
 name: ai-maturity-test
-description: Runs the "¿Qué tan AI First sos?" self-assessment with one person, in Spanish — 10 multiple-choice questions, one at a time, asking after each answer why they chose it, plus "Si fueras un animal, ¿cuál serías?" — computes their AI adoption level (1 to 6) with fixed rules, writes a short read per area, saves the result as a dated Markdown file in their node, and builds their profile page (level, journey, five areas and a 3D mascot dressed as their animal) as a self-contained HTML that works offline and downloads as PDF. Use it when someone says "hagamos el test", "test de madurez", "qué tan AI First soy" or asks to measure their AI adoption at the start or end of a course.
+description: Runs the "¿Qué tan AI First sos?" self-assessment with one person, in Spanish — 10 multiple-choice questions, one at a time, asking why they chose each answer about how they work, plus "Si fueras un animal, ¿cuál serías?" — computes their AI adoption level (1 to 6) with fixed rules, writes a short read per area, saves the result as a dated Markdown file in their node, and builds their profile page (level, journey, five areas and a 3D mascot dressed as their animal) as a self-contained HTML that works offline and downloads as PDF. Use it when someone says "hagamos el test", "test de madurez", "qué tan AI First soy" or asks to measure their AI adoption at the start or end of a course.
 ---
 
 # Test "¿Qué tan AI First sos?"
@@ -13,9 +13,12 @@ descarga en PDF.
 ## Reglas que no se negocian
 
 - **Una pregunta por vez.** Nunca mostrás dos preguntas juntas ni adelantás las que siguen.
-- **Después de cada respuesta, una sola repregunta**, en una línea: *"¿Por qué elegiste esa? Pensalo
-  en voz alta, en una o dos frases."* Registrás la letra y el motivo con sus palabras, sin
-  corregirlo ni resumirlo de más. Si no quiere contestar el porqué, anotás "sin motivo" y seguís.
+- **P1 y P3 son datos, no se repreguntan.** Su rol y si lidera personas no tienen un porqué:
+  registrás la letra y pasás a la siguiente pregunta.
+- **En P2 y de P4 a P10, una sola repregunta después de cada respuesta**, en una línea: *"¿Por
+  qué elegiste esa? Pensalo en voz alta, en una o dos frases."* Registrás la letra y el motivo con
+  sus palabras, sin corregirlo ni resumirlo de más. Si no quiere contestar el porqué, anotás "sin
+  motivo" y seguís.
 - **No opinás durante el test.** Ni "¡muy bien!" ni "eso es avanzado". Las respuestas no son buenas
   ni malas: el test describe cómo trabaja hoy.
 - **El nivel sale de las reglas de abajo, nunca de tu criterio.** El porqué no cambia el nivel:
@@ -28,7 +31,8 @@ descarga en PDF.
 Decile esto, con tus palabras y en pocas líneas:
 
 1. Son 10 preguntas y una pregunta final de yapa. Tardan unos 10 minutos.
-2. Después de cada una le vas a preguntar por qué la eligió. Lo que importa es pensar en voz alta.
+2. En las preguntas sobre cómo trabaja le vas a preguntar por qué eligió esa respuesta. Lo que
+   importa es pensar en voz alta.
 3. **El resultado se comparte con el curso.** Que hable de *cómo trabaja*, no de los sistemas, los
    clientes ni las reglas internas de su empresa. Si en un motivo aparece un dato así (un nombre de
    cliente, un sistema interno, un número del negocio), lo anotás de forma genérica ("un sistema
@@ -226,7 +230,8 @@ animal: <lo que contestó, o vacío>
 
 | Pregunta | Respuesta | Por qué |
 |---|---|---|
-| P1. ¿Qué hacés hoy? | A. Product Manager o Product Owner | <su motivo, con sus palabras> |
+| P1. ¿Qué hacés hoy? | A. Product Manager o Product Owner | — |
+| P2. Discovery y delivery: ¿cuál te describe mejor? | A. Los distingo y tengo un caso donde los apliqué | <su motivo, con sus palabras> |
 | … | … | … |
 
 **Si fueras un animal:** <lo que contestó>
