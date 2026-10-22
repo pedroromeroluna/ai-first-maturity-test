@@ -1,6 +1,6 @@
 # ¿Qué tan AI First sos?
 
-Un skill para Claude Code que toma un test de 10 preguntas sobre cómo usás la IA para trabajar y te
+Un skill para Claude Code que toma un test de 9 preguntas sobre cómo usás la IA para trabajar y te
 dice en qué nivel de adopción estás, del 1 al 6: de *Ocasional* a *AI First Multiplayer*. Guarda el
 resultado en tu carpeta para que puedas repetirlo al final de un curso y ver cómo cambió, y te arma
 una página de perfil con tu nivel, tu recorrido, tus cinco áreas y un compañero de viaje en 3D

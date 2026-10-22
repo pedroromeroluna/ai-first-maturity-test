@@ -1,11 +1,11 @@
 ---
 name: ai-maturity-test
-description: Runs the "¿Qué tan AI First sos?" self-assessment with one person, in Spanish — 10 multiple-choice questions, one at a time, plus "Si fueras un animal, ¿cuál serías?" — computes their AI adoption level (1 to 6) with fixed rules, writes a short read per area, saves the result as a dated Markdown file in their node, and builds their profile page (level, journey, five areas and a 3D mascot dressed as their animal) as a self-contained HTML that works offline and downloads as PDF. Use it when someone says "hagamos el test", "test de madurez", "qué tan AI First soy" or asks to measure their AI adoption at the start or end of a course.
+description: Runs the "¿Qué tan AI First sos?" self-assessment with one person, in Spanish — 9 multiple-choice questions, one at a time, plus "Si fueras un animal, ¿cuál serías?" — computes their AI adoption level (1 to 6) with fixed rules, writes a short read per area, saves the result as a dated Markdown file in their node, and builds their profile page (level, journey, five areas and a 3D mascot dressed as their animal) as a self-contained HTML that works offline and downloads as PDF. Use it when someone says "hagamos el test", "test de madurez", "qué tan AI First soy" or asks to measure their AI adoption at the start or end of a course.
 ---
 
 # Test "¿Qué tan AI First sos?"
 
-Conducís un test de 10 preguntas con una persona, en español rioplatense (voseo). El resultado es su
+Conducís un test de 9 preguntas con una persona, en español rioplatense (voseo). El resultado es su
 nivel de adopción de IA, del 1 al 6, más una lectura corta por área. Lo guardás en su carpeta para
 que pueda repetir el test al final del curso y ver cómo cambió, y le armás su página de perfil, que
 descarga en PDF.
@@ -26,7 +26,7 @@ descarga en PDF.
 
 Decile esto, con tus palabras y en pocas líneas:
 
-1. Son 10 preguntas y una pregunta final de yapa. Tardan unos 5 minutos.
+1. Son 9 preguntas y una pregunta final de yapa. Tardan unos 5 minutos.
 2. Que elija la opción que más se parezca a cómo trabaja hoy, no a cómo le gustaría trabajar.
 3. **El resultado se comparte con el curso.** Si al contestar menciona sistemas, clientes o reglas
    internas de su empresa, eso no va al archivo ni a la página.
@@ -75,6 +75,10 @@ las opciones numeradas y pedile que conteste con el número.
 lista, para que no se note cuál es la "mejor". Mostralas sin la letra y guardá siempre la **letra
 original** de la opción que eligió.
 
+**Los códigos saltean P2 a propósito.** P1, P3 a P10 son los mismos códigos del test "¿Qué tan AI
+First sos?" del sitio, para que los resultados se puedan comparar; P2 no se pregunta. A la persona
+no le mostrás los códigos: le mostrás "Pregunta 1 de 9", "Pregunta 2 de 9" y así.
+
 Cada pregunta va con su aclaración, en cursiva, debajo del título.
 
 ### Tu trabajo
@@ -84,12 +88,6 @@ Cada pregunta va con su aclaración, en cursiva, debajo del título.
 - B. Diseño (UX, UI, research)
 - C. Desarrollo o liderazgo técnico
 - D. Negocio, marketing u operaciones
-
-**P2. Discovery y delivery: ¿cuál te describe mejor?** *Descubrir qué construir no es lo mismo que
-construirlo.*
-- A. Los distingo y tengo un caso donde los apliqué
-- B. Los escuché, pero nunca los apliqué
-- C. No tengo clara la diferencia
 
 **P3. ¿Liderás a otras personas?** *En tu trabajo de hoy.*
 - A. No
@@ -263,7 +261,7 @@ node "<carpeta de este skill>/scripts/build-profile.mjs" --out "<destino>/perfil
   "date": "AAAA-MM-DD",
   "level": <número>,
   "animal": "<lo que contestó>",
-  "answers": { "P1": "A", "P2": "B", "P3": "A", "P4": "D", "P5": "D", "P6": "B", "P7": "A", "P8": "B", "P9": "B", "P10": "B" },
+  "answers": { "P1": "A", "P3": "A", "P4": "D", "P5": "D", "P6": "B", "P7": "A", "P8": "B", "P9": "B", "P10": "B" },
   "reads": { "Uso": "…", "Contexto": "…", "Automatización": "…", "Construcción": "…", "Equipo": "…" },
   "recipe": { … solo si el animal no está en el kit … }
 }

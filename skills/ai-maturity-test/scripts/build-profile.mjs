@@ -40,7 +40,7 @@ if (!name) fail('Falta "name" (nombre y apellido).');
 const date = String(data.date || new Date().toISOString().slice(0, 10));
 if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) fail('"date" tiene que ser AAAA-MM-DD.');
 
-const OPTIONS = { P1: 'ABCD', P2: 'ABC', P3: 'ABC', P4: 'ABCD', P5: 'ABCD', P6: 'ABC', P7: 'ABC', P8: 'ABCD', P9: 'ABCD', P10: 'ABCD' };
+const OPTIONS = { P1: 'ABCD', P3: 'ABC', P4: 'ABCD', P5: 'ABCD', P6: 'ABC', P7: 'ABC', P8: 'ABCD', P9: 'ABCD', P10: 'ABCD' };
 const ans = {};
 for (const q of Object.keys(OPTIONS)) {
   const v = data.answers && data.answers[q];
