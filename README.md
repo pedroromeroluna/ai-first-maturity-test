@@ -21,8 +21,7 @@ Después, en Claude Code: *"hagamos el test de madurez"*.
 
 ## Qué deja
 
-- `test-ai-first-<nombre-apellido>-AAAA-MM-DD.md`: tus respuestas, por qué elegiste cada una, tu
-  nivel y una lectura por área.
+- `test-ai-first-<nombre-apellido>-AAAA-MM-DD.md`: tus respuestas, tu nivel y una lectura por área.
 - `perfil-ai-first-<nombre-apellido>.html`: tu página de perfil, con el botón para bajarla en PDF.
 
 ## Licencia
