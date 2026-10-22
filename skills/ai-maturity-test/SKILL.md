@@ -51,6 +51,11 @@ Antes de la primera pregunta, ubicá dónde va el resultado:
      crees vos.
 2. **Si no hay brain**, el destino es la carpeta donde corre la sesión, y se lo decís.
 
+**En un brain, los archivos van en la subcarpeta `research/` del nodo** (`<nodo>/research/`), nunca
+en la raíz del nodo: el árbol del brain alcanza `research/` de cualquier nodo creado por el sistema,
+y un archivo suelto en la raíz del nodo aparece como "no lo alcanza ningún glob" en el arranque de
+la próxima sesión. Si `research/` no existe, la creás. No tocás `.system/tree.md`.
+
 Van dos archivos al destino:
 
 - `test-ai-first-<nombre-apellido>-AAAA-MM-DD.md`, con la fecha de hoy. Si ya existe uno con ese
@@ -58,9 +63,10 @@ Van dos archivos al destino:
 - `perfil-ai-first-<nombre-apellido>.html`, que se pisa si ya existe: la página muestra siempre el
   último resultado.
 
-Mirá si en el destino ya hay otros `test-ai-first-<nombre-apellido>-*.md` de la misma persona: el más
-reciente es su resultado anterior y lo vas a usar en el paso 5. Los archivos de otras personas en la
-misma carpeta no cuentan.
+Mirá si en el destino ya hay otros `test-ai-first-<nombre-apellido>-*.md` de la misma persona
+(también en la raíz del nodo, donde los dejaba una versión anterior del skill): el más reciente es
+su resultado anterior y lo vas a usar en el paso 5. Los archivos de otras personas en la misma
+carpeta no cuentan.
 
 ## 3. Las preguntas
 
